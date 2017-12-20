@@ -4,3 +4,20 @@
   <%- partial('_partial/home') %>
 <% } %>
 
+<div id="coding-link">
+</div>
+
+<script type="text/javascript">
+(function() {
+  xmlhttp = new XMLHttpRequest();
+  xmlhttp.open("HEAD", document.URL ,true);
+  xmlhttp.onreadystatechange=function() {
+  if (xmlhttp.readyState==4) {
+    console.log(xmlhttp.getResponseHeader('server'));
+    if(xmlhttp.getResponseHeader('server')==='Coding Pages'){
+      document.getElementById('coding-link').innerHTML='<p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>'
+    }
+    }
+  }
+})();
+</script>

@@ -1,3 +1,19 @@
 .toolbox-mobile {
     box-shadow: -10px 10px 60px 0px rgba(0,0,0,1)
 }
+
+#coding-link{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;  
+    text-align: center;
+}
+
+#coding-link > p{
+    font-size: 12px;
+    color: #999;
+}
+#coding-link > p > a{
+    font-size: 12px;
+    color: #999;
+}
